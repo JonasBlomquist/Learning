@@ -1,4 +1,4 @@
-# Learning
+# Personal Learning
 
 This repository is made for me to learn different concepts and coding skills.
 
