@@ -11,7 +11,7 @@ The nearest neighbour algorithm is a simple algorithm that assigns a label using
 
 ### C++ implementation
 
-See [code](NearestNeighbours.cpp)
+See [code](NearestNeighbours.cpp).
 
 The code will:
 
@@ -25,7 +25,7 @@ The code will:
 
 I have used clang++ as compiler:
 
-  clang++ -fsanitize=address NearestNeighbours.cpp *.o -o NearestNeihbours
+  `clang++ -fsanitize=address NearestNeighbours.cpp *.o -o NearestNeihbours`
 
 ### Dependencies
 
