@@ -2,7 +2,8 @@
 
 This project is an implementation of Logistic Regression in C++.
 
-Logistic regression assigns the label $y$ to a point $x$ using a previously chosen linear function $f(x) = w^T x$. To find the label, we use $y = \sign(f(x))$ (i.e. if $f(x)$ is positive, the label is $1$, else the label is $-1$). We find $w$ by minimizing the function:
+Logistic regression assigns the label $y$ to a point $x$ using a previously chosen linear function $f(x) = w^T x$. To find the label, we use $y = sign(f(x))$ (i.e. if $f(x)$ is positive, the label is $1$, else the label is $-1$). We find $w$ by minimizing the function:
+
 $$
     L(w) = \frac{1}{N} \sum_{i=1}^{N} \log (1 + \exp(-y_i w^T x_i))
 $$
@@ -29,7 +30,7 @@ The code will:
 
 * Read "dataX.dat", "dataXtest.dat" and "dataY.dat" from disk. 
 * Find the optimal $w$ using the rules above using $\epsilon = 10e-7$ 
-* For each point in "dataXtest.dat", assign the apropriate label using the assignment rule $y = \sign(f(x))$. 
+* For each point in "dataXtest.dat", assign the apropriate label using the assignment rule $y = sign(f(x))$. 
 * Write a new file "LogReg.dat" containing the assigned labels in the same format as "dataY.dat". 
 
 
