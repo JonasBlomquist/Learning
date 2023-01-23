@@ -1,4 +1,4 @@
-# Protein structure - Contact Number
+# Protein structure - Solvent Exposure
 
 
 The measure of solvent exposure is an important feature for protein folding. It provides a measure for how exposed vs buried the amino acid is and thus information about the placement in the folded protein. Solvent exposure can be measured in various ways such as accessible surface area, which describes the area of the protein, which is accessible for (usually) a water molecule. Other measures as contact number can also be used. This feature simply counts the number of $C^\alpha$ atoms within a radius (usually 10 Å) of the $C^\alpha$ atom of the amino acid. This is much easier to implement and faster to compute. 
@@ -14,6 +14,18 @@ Here $E_i$ can be different measures that describe the local structure environme
 This scoring function thus successfully combine the residue-residue interactions with a measure of environment. This combination of features in the scoring function results in a prediction folding method, which was better than any other methods at the time. Rosetta were for many years the best folding prediction method until AlphaFold. The method presented in Simons et al., 1997 does however have problems with proteins containing β-strands. The paper mentions implementing more features to measure environment and moving away from the use of fixed number of neighbors to achieve the boolean value of buried, as this is not very efifcient for small proteins. 
 
 The use of half sphere exposure could potentially help to solve some of these problems. Half sphere exposure (HSE) introduced in Hammelryck, 2005 [^fn2] is a simple but very effective extension of contact number. Here the sphere is divided into two half spheres dependent on the side chain. The contact number can then both be described in the direction of the side chain and in the opposite direction. This measure can thus better be used to describe side chain burial, thus helping with $\beta$-sheets and with small proteins as well. 
+
+### Analysis
+
+In the notebook [Solvent Exposure](Solvent_exposure.ipynb) I have conducted a small analysis looking at the two solvent exposure measures contact number and half sphere exposure. 
+
+### Dependencies
+
+The notebook uses:
+
+[Matplotlib](https://matplotlib.org/)
+[Biopython](https://biopython.org/)
+
 
 ### References
 
