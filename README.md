@@ -4,7 +4,7 @@ This repository is made for me to learn different concepts and coding skills.
 
 The repository consist of several subprojects written in different languages:
 
-1. [C++](#cpp)
+1. [C++](#c++)
 2. [Python](#python)
 3. [R](#r)
 4. [Bash](#bash)
