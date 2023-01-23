@@ -4,7 +4,7 @@ This repository is made for me to learn different concepts and coding skills.
 
 The repository consist of several subprojects written in different languages:
 
-1. [C++](#c++)
+1. [C++](#cpp)
 2. [Python](#python)
 3. [R](#r)
 4. [Bash](#bash)
@@ -13,7 +13,7 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-<a name="cpp"><\a>
+<a name="cpp"></a>
 ### C++ 
 
 ##### Machine Learning
@@ -28,7 +28,7 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-<a name="python"><\a>
+<a name="python"></a>
 ### Python 
 
 ##### Machine Learning
@@ -47,7 +47,7 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-<a name="r"><\a>
+<a name="r"></a>
 ### R 
 
 ##### Bioinformatics
@@ -58,7 +58,7 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-<a name="bash"><\a>
+<a name="bash"></a>
 ### Bash 
 
 TBD
