@@ -13,18 +13,18 @@ The repository consist of several subprojects:
 
 ##### Bioinformatics
 
-* Sequence Alignment
-* UMI quality tool
+* Sequence Alignment (In Progress)
+* UMI quality tool (In Progress)
 
 
 ### Python
 
 ##### Machine Learning
 
-* Bayesian Logistic regression
-* Probabilistic PCA
-* Diffusion Model
-* Natural Language Processing
+* Bayesian Logistic regression (In Progress)
+* Probabilistic PCA (In Progress)
+* Diffusion Model (In Progress)
+* Natural Language Processing (In Progress)
 
 
 ### R
