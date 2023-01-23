@@ -1,0 +1,9 @@
+Input: lname=input.gz nPop=3, fname=(null) qname=(null) outfiles=assign3
+Setup: seed=1 nThreads=3 method=1
+Convergence: maxIter=2000 tol=0.000010 tolLike50=0.100000 dymBound=0
+Filters: misTol=0.050000 minMaf=0.000000 minLrt=0.000000 minInd=0
+Input file has dim: nsites=50000 nind=100
+Input file has dim (AFTER filtering): nsites=50000 nind=100
+	[ALL done] cpu-time used =  176.77 sec
+	[ALL done] walltime used =  65.00 sec
+best like=-3887043.405247 after 300 iterations
