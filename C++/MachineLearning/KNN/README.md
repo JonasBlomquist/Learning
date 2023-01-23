@@ -13,4 +13,4 @@ This project is an implementation of k-nearest neighbour in C++.
 
 ### C++ implementation
 
-See [code](code/main.cpp)
+See [code](NearestNeighbours.cpp)
