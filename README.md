@@ -26,6 +26,13 @@ The repository consist of several subprojects:
 * Diffusion Model (In Progress)
 * Natural Language Processing (In Progress)
 
+##### Bioinformatics
+
+* Protein structure 
+    * Contact Number analysis
+* RNA structure
+    * Nussinov
+
 
 ### R
 
