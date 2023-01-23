@@ -36,7 +36,11 @@ The repository consist of several subprojects:
 
 ### R
 
-TBD
+##### Bioinformatics
+
+* Allele frequency using EM algorithm (In progress)
+* Admixture based on genotype likelihoods (In progress)
+* Analysing Fitness of GFP variants (In progress)
 
 ### Bash
 
