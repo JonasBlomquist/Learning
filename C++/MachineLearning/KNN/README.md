@@ -4,8 +4,8 @@ This project is an implementation of k-nearest neighbours in C++.
 
 ### Algorithm
 
-* Compute distances $d_i = \lvert x_i - x \rvert$
-* Create a set of label distance pairs $P$ with $P_i = (y_i, d_i), i = 1 \hdots N$
+* Compute distances $d_i = \lVert x_i - x \rVert$
+* Create a set of label distance pairs $P$ with $P_i = (y_i, d_i), i = 1 \dots N$
 
 
 
