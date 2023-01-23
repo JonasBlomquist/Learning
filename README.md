@@ -2,26 +2,67 @@
 
 This repository is made for me to learn different concepts and coding skills.
 
-The repository consist of several subprojects:
+The repository consist of several subprojects written in different languages:
 
-### C++
+1. [C++](#cpp)
+2. [Python](#python)
+3. [R](#r)
+4. [Bash](#bash)
+
+Some projects have been part of courses others are spare time projects.
+
+Feel free to look around!
+
+
+
+---
+
+<a name="cpp"></a>
+### C++ 
 
 ##### Machine Learning
 
 * [K-Nearest-Neighbours](C++/MachineLearning/KNN/)
 * [Logistic Regression](C++/MachineLearning/LogisticRegression/)
 
+##### Bioinformatics
 
-### Python
+* Sequence Alignment (In Progress)
+* UMI quality tool (In Progress)
+
+---
+
+<a name="python"></a>
+### Python 
 
 ##### Machine Learning
 
-* Bayesian Logistic regression
-* Probabilistic PCA
-* Diffusion Model
-* Natural Language Processing
+* Bayesian Logistic regression (In Progress)
+* Probabilistic PCA (In Progress)
+* Diffusion Model (In Progress)
+* Natural Language Processing (In Progress)
 
+##### Bioinformatics
 
-### R
+* [Protein structure]((Python/Bioinformatics/ProteinStructure/) (In progress)
+    * Contact Number analysis
+* RNA structure (In progress)
+    * Nussinov
+
+---
+
+<a name="r"></a>
+### R 
+
+##### Bioinformatics
+
+* Allele frequency using EM algorithm (In progress)
+* Admixture based on genotype likelihoods (In progress)
+* Analysing Fitness of GFP variants (In progress)
+
+---
+
+<a name="bash"></a>
+### Bash 
 
 TBD

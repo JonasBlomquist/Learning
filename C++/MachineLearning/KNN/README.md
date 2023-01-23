@@ -25,7 +25,7 @@ The code will:
 
 I have used clang++ as compiler:
 
-  `clang++ NearestNeighbours.cpp *.o -o NearestNeihbours`
+  `clang++ NearestNeighbours.cpp -o NearestNeihbours`
 
 ### Dependencies
 
