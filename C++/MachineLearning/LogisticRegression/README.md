@@ -38,7 +38,7 @@ The code will:
 
 I have used clang++ as compiler:
 
-  `clang++ LogisticRegression.cpp *.o -o LogisticRegression`
+  `clang++ LogisticRegression.cpp -o LogisticRegression`
 
 
 ### Dependencies
