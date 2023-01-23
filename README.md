@@ -8,7 +8,7 @@ The repository consist of several subprojects:
 
 ##### Machine Learning
 
-* [K-Nearest-Neighbor](C++/MachineLearning/KNN/)
+* [K-Nearest-Neighbours](C++/MachineLearning/KNN/)
 * [Logistic Regression](C++/MachineLearning/LogisticRegression/)
 
 
