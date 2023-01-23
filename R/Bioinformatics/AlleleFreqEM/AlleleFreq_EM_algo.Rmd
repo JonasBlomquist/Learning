@@ -1,0 +1,105 @@
+---
+title: "Allele Frequency using EM Algorithm"
+output: alleleFreqEMalgo
+---
+
+# Allele Frequency using EM Algorithm
+
+Load the data file:
+
+```{r}
+# Open mpileup
+mpileup <- read.delim('nice.mpileup', 
+                      as.is=T, sep='\t', header=F, comment.char="")
+
+n <- (length(mpileup) - 3)/3 # Find number of individuals
+# Name columns in mpileup
+colnames(mpileup) <- c("chr", "pos", "ref", paste(c("n", "base", "qual"), 
+                                                  rep(1:n, each=3), sep = '_'))
+```
+
+Convert ascii Q-score encoding to probability:
+
+```{r}
+# Define function to convert quality score to probability of error
+QtoProb<-function(x){
+  y <- utf8ToInt(x) ## ascii to integer
+  Q <- y -33 #offset
+  P <- 10**(-Q/10) # Convert to prob
+  P
+}
+```
+
+Now we can define our likelihood model and a function for our EM algorithm:
+
+```{r}
+# Define likelihood model
+likelihood <- function(base, observed, quality){
+  corr <- prod(1 - QtoProb(quality)[which(strsplit(observed, "")[[1]]==base)]) #If position equal to base
+  other <- prod(1/3*QtoProb(quality)[which(strsplit(observed, "")[[1]]!=base)]) # If position not equal to base
+  corr*other
+}
+
+# Define EM algorithm
+EMalgo <- function(pk, like){
+  ##P(Xi|G)theta_j
+  Ab <- like[1,]*pk[1] 
+  Cb <- like[2,]*pk[2]
+  Gb <- like[3,]*pk[3]
+  Tb <- like[4,]*pk[4]
+  
+  pX <- Ab + Cb + Gb + Tb
+  
+  #Q_i(G_j)
+  pA <- Ab/pX
+  pC <- Cb/pX
+  pG <- Gb/pX
+  pT <- Tb/pX
+  
+  all <- sum(pA + pC + pG + pT)
+  
+  # Compute theta new
+  pk_new <- c(sum(pA)/all, sum(pC)/all, sum(pG)/all, sum(pT)/all)
+  return(pk_new)
+}
+```
+
+Finally we can run our EM algorithm to find likelihoods for each possible base.
+We identify sites for which the most common base has a probability $< 0.95$.
+
+```{r}
+# Initiate count
+n_sites <- 0
+
+# loop over sites and then yeast strains
+for (j in 1:nrow(mpileup)){
+  like = c()
+  for (i in 1:n){
+    # Initial guess
+    pk = c(.25,.25,.25,.25)
+    # Extract the observed bases and quality scores
+    observed = mpileup[j,paste("base", i, sep="_")]
+    quality = mpileup[j,paste("qual", i, sep="_")]
+    # Compute likelihoods for each possible base
+    like_A = likelihood("A", observed, quality)
+    like_C = likelihood("C", observed, quality)
+    like_G = likelihood("G", observed, quality)
+    like_T = likelihood("T", observed, quality)
+    like <- cbind(like, c(like_A, like_C, like_G, like_T))
+  }
+  # Perform 10 iterations of the EM algorithm
+  for (k in 1:10){
+    pk <- EMalgo(pk, like)
+  }
+  # If the most common allele have a frequence < 0.95 print the site
+  if (max(pk) < .95){
+    cat("\n\nShowing probabilities for position: ", mpileup[j, "pos"], "in row", 
+        j, "\n")
+    print(data.frame("A"=pk[1], "C"=pk[2], "G"=pk[3], "T"=pk[4]))
+    n_sites <- n_sites + 1 # Increase count by 1
+  }
+}
+# Print number of sites with most common < 0.95
+print(n_sites)
+```
+

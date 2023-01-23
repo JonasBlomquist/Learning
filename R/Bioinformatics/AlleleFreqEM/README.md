@@ -1,0 +1,3 @@
+# Estimate allele frequency for the 7 pompe stains 
+
+Have to write readme with theoretical background...
