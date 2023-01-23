@@ -44,7 +44,7 @@ Feel free to look around!
 
 ##### Bioinformatics
 
-* [Protein structure]((Python/Bioinformatics/ProteinStructure/) (In progress)
+* [Protein structure](Python/Bioinformatics/ProteinStructure/) (In progress)
     * Contact Number analysis
 * RNA structure (In progress)
     * Nussinov
