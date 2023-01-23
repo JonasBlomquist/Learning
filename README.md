@@ -46,7 +46,7 @@ Feel free to look around!
 
 * [Protein structure](Python/Bioinformatics/ProteinStructure/)
     * Contact Number analysis
-* RNA structure (In progress)
+* [RNA structure](Python/Bioinformatics/RNAStructur)
     * Nussinov
 
 ---
