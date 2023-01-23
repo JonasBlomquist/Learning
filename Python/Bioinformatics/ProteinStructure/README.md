@@ -17,7 +17,7 @@ The use of half sphere exposure could potentially help to solve some of these pr
 
 ### Analysis
 
-In the notebook [Solvent Exposure](Solvent_exposure.ipynb) I have conducted a small analysis looking at the two solvent exposure measures contact number and half sphere exposure. The notebook can be view using nbviewer [here](https://nbviewer.org/github/JonasBlomquist/Learning/blob/main/Python/Bioinformatics/ProteinStructure/Solvent_exposure.ipynb).
+In the notebook [Solvent Exposure](Solvent_exposure.ipynb) I have conducted a small analysis looking at the two solvent exposure measures contact number and half sphere exposure.
 
 ### Dependencies
 
