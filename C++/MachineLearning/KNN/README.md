@@ -25,7 +25,7 @@ The code will:
 
 I have used clang++ as compiler:
 
-  `clang++ -fsanitize=address NearestNeighbours.cpp *.o -o NearestNeihbours`
+  `clang++ NearestNeighbours.cpp *.o -o NearestNeihbours`
 
 ### Dependencies
 
