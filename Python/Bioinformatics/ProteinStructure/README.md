@@ -23,8 +23,8 @@ In the notebook [Solvent Exposure](Solvent_exposure.ipynb) I have conducted a sm
 
 The notebook uses:
 
-[Matplotlib](https://matplotlib.org/)
-[Biopython](https://biopython.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Biopython](https://biopython.org/)
 
 
 ### References
