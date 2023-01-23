@@ -45,7 +45,7 @@ Feel free to look around!
 ##### Bioinformatics
 
 * [Protein structure](Python/Bioinformatics/ProteinStructure/)
-    * Contact Number analysis
+    * Solvent Exposure analysis
 * [RNA structure](Python/Bioinformatics/RNAStructure)
     * Nussinov
 
