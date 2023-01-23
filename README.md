@@ -2,7 +2,9 @@
 
 This repository is made for me to learn different concepts and coding skills.
 
-The repository consist of several subprojects:
+The repository consist of several subprojects that can be seen here.
+
+--
 
 ### C++
 
@@ -16,6 +18,7 @@ The repository consist of several subprojects:
 * Sequence Alignment (In Progress)
 * UMI quality tool (In Progress)
 
+--
 
 ### Python
 
@@ -33,6 +36,7 @@ The repository consist of several subprojects:
 * RNA structure (In progress)
     * Nussinov
 
+--
 
 ### R
 
@@ -41,6 +45,8 @@ The repository consist of several subprojects:
 * Allele frequency using EM algorithm (In progress)
 * Admixture based on genotype likelihoods (In progress)
 * Analysing Fitness of GFP variants (In progress)
+
+--
 
 ### Bash
 
