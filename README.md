@@ -28,9 +28,9 @@ The repository consist of several subprojects:
 
 ##### Bioinformatics
 
-* Protein structure 
+* Protein structure (In progress)
     * Contact Number analysis
-* RNA structure
+* RNA structure (In progress)
     * Nussinov
 
 
