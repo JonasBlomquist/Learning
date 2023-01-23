@@ -11,6 +11,11 @@ The repository consist of several subprojects:
 * [K-Nearest-Neighbours](C++/MachineLearning/KNN/)
 * [Logistic Regression](C++/MachineLearning/LogisticRegression/)
 
+##### Bioinformatics
+
+* Sequence Alignment
+* UMI quality tool
+
 
 ### Python
 
@@ -23,5 +28,9 @@ The repository consist of several subprojects:
 
 
 ### R
+
+TBD
+
+### Bash
 
 TBD
