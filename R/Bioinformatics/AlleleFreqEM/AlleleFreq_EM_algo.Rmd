@@ -1,9 +1,8 @@
 ---
 title: "Allele Frequency using EM Algorithm"
-output: alleleFreqEMalgo
+output: github_document
 ---
 
-# Allele Frequency using EM Algorithm
 
 Load the data file:
 
