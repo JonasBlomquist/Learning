@@ -13,7 +13,8 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-### C++ <a name=cpp><\a>
+<a name="cpp"><\a>
+### C++ 
 
 ##### Machine Learning
 
@@ -27,7 +28,8 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-### Python <a name=python><\a>
+<a name="python"><\a>
+### Python 
 
 ##### Machine Learning
 
@@ -45,7 +47,8 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-### R <a name=r><\a>
+<a name="r"><\a>
+### R 
 
 ##### Bioinformatics
 
@@ -55,6 +58,7 @@ The repository consist of several subprojects written in different languages:
 
 ---
 
-### Bash <a name=bash><\a>
+<a name="bash"><\a>
+### Bash 
 
 TBD
