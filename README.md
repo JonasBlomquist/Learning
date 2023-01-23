@@ -9,14 +9,14 @@ The repository consist of several subprojects:
 ##### Machine Learning
 
 * k-Nearest-Neighbor
-* Linear Regression
+* Logistic Regression
 
 
 ### Python
 
 ##### Machine Learning
 
-* Bayesian Linear regression
+* Bayesian Logistic regression
 * Probabilistic PCA
 * Diffusion Model
 * Natural Language Processing
