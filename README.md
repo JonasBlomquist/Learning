@@ -37,10 +37,10 @@ Feel free to look around!
 
 ##### Machine Learning
 
-* Bayesian Logistic regression (In Progress)
-* Probabilistic PCA (In Progress)
-* Diffusion Model (In Progress)
-* Natural Language Processing (In Progress)
+* [Bayesian Logistic regression](Python/MachineLearning/BayesianLinearRegression) (In Progress)
+* [Probabilistic PCA](Python/MachineLearning/ProbabilisticPCA) (In Progress)
+* [Diffusion Model](Python/MachineLearning/DiffusionModel) (In Progress)
+* [Natural Language Processing](Python/MachineLearning/NaturalLanguageProc) (In Progress)
 
 ##### Bioinformatics
 
