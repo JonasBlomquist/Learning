@@ -57,7 +57,7 @@ Feel free to look around!
 ##### Bioinformatics
 
 * [Allele frequency using EM algorithm](R/Bioinformatics/AlleleFreqEM) (In progress)
-* Admixture based on genotype likelihoods (In progress)
+* [Admixture based on genotype likelihoods](R/Bioinformatics/AdmixtureFreq) (In progress)
 * Analysing Fitness of GFP variants (In progress)
 
 ---
