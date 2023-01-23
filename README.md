@@ -9,6 +9,10 @@ The repository consist of several subprojects written in different languages:
 3. [R](#r)
 4. [Bash](#bash)
 
+Some projects have been part of courses others are spare time projects.
+
+Feel free to look around!
+
 
 
 ---
