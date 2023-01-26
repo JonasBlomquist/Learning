@@ -8,63 +8,43 @@ Now we will focus only on the African Americans. Some of the African Americans s
 
 The likelihood model of the data given the ancestral allele frequencies and the admixture proportions can be written as:
 
-    \begin{equation}
+$$
         P(X | Q, F) = \prod_j^M P(X_j | Q, F_j) = \prod_j^M \sum_{G \in \{0,1,2\}} P(X_j | Q, F_j, G_j) P(G_j | Q, F_j)
-    \end{equation}
+$$
     
-    \begin{equation}
+$$
         \prod_j^M \sum_{G \in \{0,1,2\}} P(X_j | Q, F_j, G_j) P(G_j | Q, F_j) = \prod_j^M \sum_{G \in \{0,1,2\}} P(X_j | G_j) P(G_j | Q, F_j)
-    \end{equation}
-    with the notation:
-    \begin{itemize}
-        \item $X_j$: the sequencing data at site j
-        
-        \item $Q$: admixture frequencies
-        
-        \item $F_j$: ancestral allele frequencies for site j
-        
-        \item $M$: number of sites
-        
-        \item $G_j$: genotype for site j
-    \end{itemize}
+$$
+with the notation:
+
+* $X_j$: the sequencing data at site j       
+* $Q$: admixture frequencies
+* $F_j$: ancestral allele frequencies for site j
+* $M$: number of sites
+* $G_j$: genotype for site j
     
-    $P(X_j|G_j)$ is the genotype likelihoods that we have in the input.gz file. 
+$P(X_j|G_j)$ is the genotype likelihoods that we have in the input.gz file. 
     
-    The probability of the genotype given the ancestral allele frequencies and the admixture proportions assuming Hardy-Weinberg equilibrium can be written as:
+The probability of the genotype given the ancestral allele frequencies and the admixture proportions assuming Hardy-Weinberg equilibrium can be written as:
     
-\begin{equation}
+$$
         P(G_j | Q, F_j) =  P(G_j | h^j) =
     \begin{cases} \mbox{$(1-h^j)^2$} & \text{if}\quad G_j = 0 \\ 
     \mbox{$2 h (1-h)$} & \text{if}\quad G_j = 1 \\
     \mbox{$(h^j)^2$} & \text{if}\quad G_j = 2\end{cases}
-\end{equation}
+$$
+
 With $h^j$ defined as:
-\begin{equation}
+
+$$
     h^j = \sum_{k=1}^K f^{jk} q^k
-\end{equation}
+$$
+
 with notation:
-\begin{itemize}
-    \item $K$: number of ancestral populations
 
-    \item $q^k$: admixture proportion for population $k$
-
-    \item $f^{jk}$: allele frequency of allele A for population $k$ at position $j$
-\end{itemize}
-
-
-\item For the first african american individual the we have the following admixture proportions under null and alternative model:
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|c|}
-    \hline
-         & Null model & Alternative model \\\hline
-        African & 0.6104123 & 0.6104123 \\
-        European & 0.3895877 & 0.3850796 \\
-        Chinese & 0 & 0.004508112 \\\hline
-    \end{tabular}
-    \caption{Null model and alternative model for the first African American individual.}
-    \label{tab:models}
-\end{table}
+* $K$: number of ancestral populations
+* $q^k$: admixture proportion for population $k$
+* $f^{jk}$: allele frequency of allele A for population $k$ at position $j$
 
 The likelihood funtion is implemented using R and this is used to compute the likelihood of the two proposed models and they can then be tested using a likelihood ratio test. 
 
