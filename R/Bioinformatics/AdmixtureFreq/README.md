@@ -15,6 +15,7 @@ $$
 $$
         \prod_j^M \sum_{G \in \{0,1,2\}} P(X_j | Q, F_j, G_j) P(G_j | Q, F_j) = \prod_j^M \sum_{G \in \{0,1,2\}} P(X_j | G_j) P(G_j | Q, F_j)
 $$
+
 with the notation:
 
 * $X_j$: the sequencing data at site j       
